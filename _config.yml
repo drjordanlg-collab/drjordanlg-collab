@@ -1,0 +1,14 @@
+title: "Dr. [Tu Nombre] | Física e Ingeniería"
+description: "Apuntes, presentaciones Beamer y material docente universitario"
+remote_theme: just-the-docs/just-the-docs
+
+# Paleta de colores sobria y académica (puedes cambiar 'light' por 'dark')
+color_scheme: light
+
+# Enlaces rápidos arriba a la derecha
+aux_links:
+  "Mi Perfil en GitHub":
+    - "https://github.com"
+
+# Pie de página
+footer_content: "Material docente de acceso abierto."
