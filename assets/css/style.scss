@@ -1,0 +1,29 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Color de fondo para la barra lateral izquierda */
+header {
+  background-color: #1b263b; /* Azul marino oscuro elegante (puedes cambiarlo) */
+  color: #e0e1dd;            /* Texto claro para que haya buen contraste */
+  padding: 30px 25px;        /* Espacio interior para que el texto no pegue al borde */
+  border-radius: 12px;       /* Esquinas ligeramente redondeadas */
+}
+
+/* Color del título (tu nombre) y enlaces dentro de la barra izquierda */
+header h1 a,
+header a {
+  color: #ffffff;
+}
+
+header a:hover {
+  color: #778da9;
+}
+
+/* Hace que tu foto de perfil se vea circular */
+header img {
+  border-radius: 50%;
+  border: 3px solid #778da9;
+  margin-bottom: 15px;
+}
