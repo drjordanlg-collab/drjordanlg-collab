@@ -1,4 +1,4 @@
-# ¡Hola! Soy [Tu Nombre y Grado, ej. Dr. / M.C. Nombre Apellido] 👋
+# ¡Hola! Soy el Dr. Jordan LG 👋
 
 **Físico Teórico y Experimental | Ingeniero en la práctica | Profesor Universitario**
 
@@ -14,10 +14,10 @@ Apasionado por conectar las ecuaciones fundamentales con el mundo real. En este 
 ---
 
 ### 🛠️ Herramientas y Lenguajes
-![Python](https://shields.io)
-![Octave](https://shields.io)
-![LaTeX](https://shields.io)
-![Git](https://shields.io)
+![Python](https://www.python.org/)
+![Octave](https://octave.org/)
+![LaTeX](https://www.latex-project.org/)
+![Git](https://git-scm.com/)
 
 ---
 
@@ -37,7 +37,7 @@ Cuando no estoy derivando ecuaciones, calibrando sensores o escribiendo código,
 ---
 
 ### 📫 Contacto y Redes Académicas
-* 🎓 **Institución:** [Nombre de tu Universidad]
+* 🎓 **Institución:** UMAD, Universidad Iberoamericana Puebla
 * 🌐 **Sitio Web / Apuntes:** [https://github.io](https://github.io)
 * 📧 **Correo:** tu.correo@universidad.edu.mx
 ### 🛠️ Herramientas, Lenguajes y Hardware
