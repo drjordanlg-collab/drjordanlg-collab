@@ -2,16 +2,47 @@
 ---
 
 @import "{{ site.theme }}";
+@import url('https://googleapis.com');
 
-/* Color de fondo para la barra lateral izquierda */
-header {
-  background-color: #1b263b; /* Azul marino oscuro elegante (puedes cambiarlo) */
-  color: #e0e1dd;            /* Texto claro para que haya buen contraste */
-  padding: 30px 25px;        /* Espacio interior para que el texto no pegue al borde */
-  border-radius: 12px;       /* Esquinas ligeramente redondeadas */
+/* Tipografía general más grande y moderna */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16.5px;      /* Sube el tamaño base (antes era 14px) */
+  line-height: 1.7;       /* Más aire entre líneas para facilitar la lectura */
+  color: #2b2d42;
 }
 
-/* Color del título (tu nombre) y enlaces dentro de la barra izquierda */
+/* Jerarquía y estilo de los títulos */
+h1, h2, h3, h4 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #1b263b;
+  letter-spacing: -0.02em; /* Hace que los títulos grandes se vean más estilizados */
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.35rem;
+  margin-top: 1.8rem;
+}
+
+/* Fuente monoespaciada moderna para bloques de código */
+code, pre {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9em;
+}
+
+/* Barra lateral izquierda */
+header {
+  background-color: #1b263b;
+  color: #e0e1dd;
+  padding: 30px 25px;
+  border-radius: 12px;
+}
+
 header h1 a,
 header a {
   color: #ffffff;
@@ -21,7 +52,7 @@ header a:hover {
   color: #778da9;
 }
 
-/* Hace que tu foto de perfil se vea circular */
+/* Foto de perfil circular */
 header img {
   border-radius: 50%;
   border: 3px solid #778da9;
