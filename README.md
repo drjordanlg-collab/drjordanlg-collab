@@ -8,7 +8,8 @@ Si usas Cayman, puedes dejar esta etiqueta img arriba: -->
 
 **Físico Teórico y Experimental | Ingeniero en la práctica | Profesor Universitario**
 
-Apasionado por conectar las ecuaciones fundamentales con el mundo real. En este espacio comparto material didáctico, simulaciones numéricas, apuntes y códigos para mis cursos universitarios, predicando con el ejemplo sobre la importancia de construir un portafolio técnico desde el primer día.
+Apasionado por conectar las ecuaciones fundamentales con el mundo real. 
+En este espacio muestro un resumen de mis estudios y proyectos.
 
 ---
 
