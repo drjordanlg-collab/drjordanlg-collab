@@ -4,43 +4,43 @@
 @import "{{ site.theme }}";
 @import url('https://googleapis.com');
 
-/* Tipografía general más grande y moderna */
+/* 1. Amplía el contenedor principal (antes era de 860px) */
+.wrapper {
+  width: 1140px;
+  max-width: 92%; /* Evita que se corte en pantallas medianas */
+}
+
+/* 2. Tipografía general más grande y moderna */
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 16.5px;      /* Sube el tamaño base (antes era 14px) */
-  line-height: 1.7;       /* Más aire entre líneas para facilitar la lectura */
+  font-size: 16.5px;
+  line-height: 1.7;
   color: #2b2d42;
 }
 
-/* Jerarquía y estilo de los títulos */
 h1, h2, h3, h4 {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   color: #1b263b;
-  letter-spacing: -0.02em; /* Hace que los títulos grandes se vean más estilizados */
+  letter-spacing: -0.02em;
 }
 
-h1 {
-  font-size: 2rem;
-}
+h1 { font-size: 2rem; }
+h3 { font-size: 1.35rem; margin-top: 1.8rem; }
 
-h3 {
-  font-size: 1.35rem;
-  margin-top: 1.8rem;
-}
-
-/* Fuente monoespaciada moderna para bloques de código */
 code, pre {
   font-family: 'Fira Code', monospace;
   font-size: 0.9em;
 }
 
-/* Barra lateral izquierda */
+/* 3. Barra lateral izquierda */
 header {
+  width: 280px; /* Ancho fijo cómodo para tu foto y bio */
   background-color: #1b263b;
   color: #e0e1dd;
   padding: 30px 25px;
   border-radius: 12px;
+  box-sizing: border-box;
 }
 
 header h1 a,
@@ -52,9 +52,87 @@ header a:hover {
   color: #778da9;
 }
 
-/* Foto de perfil circular */
 header img {
   border-radius: 50%;
   border: 3px solid #778da9;
   margin-bottom: 15px;
+}
+
+/* 4. Columna derecha mucho más ancha (antes era de 500px) */
+section {
+  width: 780px;
+}
+
+/* 5. Ajuste automático para celulares y pantallas pequeñas */
+@media print, screen and (max-width: 1060px) {
+  .wrapper {
+    width: auto;
+  }
+  header, section {
+    float: none;
+    position: static;
+    width: auto;
+    max-width: 100%;
+  }
+  header {
+    margin-bottom: 30px;
+  }
+}
+
+/* 6. Estilo moderno para la tabla de materias */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0 30px 0;
+  border-radius: 10px;
+  overflow: hidden; /* Necesario para que se respeten las esquinas redondeadas */
+  box-shadow: 0 4px 12px rgba(27, 38, 59, 0.08);
+}
+
+/* Encabezado de la tabla a juego con la barra izquierda */
+th {
+  background-color: #1b263b;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: left;
+  padding: 14px 16px;
+  border: none;
+}
+
+/* Celdas del cuerpo de la tabla */
+td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e0e1dd;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+/* Color suave alternado en las filas (efecto cebra) */
+tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+/* Resaltado interactivo al pasar el mouse sobre una materia */
+tbody tr:hover {
+  background-color: #edf2f4;
+  transition: background-color 0.2s ease;
+}
+
+/* Convierte los enlaces de la última columna en botones limpios */
+td:last-child a {
+  display: inline-block;
+  background-color: #415a77;
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.9em;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap; /* Evita que el texto del botón se parta en dos líneas */
+}
+
+td:last-child a:hover {
+  background-color: #1b263b;
+  color: #ffffff;
 }
